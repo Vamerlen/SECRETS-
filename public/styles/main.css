@@ -115,3 +115,39 @@ a {
   font-size: 24px;
   font-family: "Titan One", cursive;
 }
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  :root {
+    --card-height: 50vh;
+    --card-width: calc(var(--card-height) / 1.2);
+  }
+
+  .card {
+    font-size: 1.2em;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* For very small screens (e.g., mobile portrait) */
+@media (max-width: 480px) {
+  :root {
+    --card-height: 45vh;
+    --card-width: calc(var(--card-height) / 1.1);
+  }
+
+  .card {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+}
